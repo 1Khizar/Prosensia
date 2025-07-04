@@ -3,29 +3,6 @@
 # Focus: Use of for/while loops, enumerate, and manual logic to build a numeric dashboard.
 # You’ll compute sum, average, min/max without using built-ins like sorted(), sum(), min().
 
-# 🔹 Define function: analyze_numbers(numbers: list[float]) -> dict
-# - Manually sort list using loops
-# - Calculate total, average, min, max without built-in methods
-# - Return result in dictionary format
-
-# 🔹 Define function: print_dashboard(data: dict)
-# - Uses for loop with enumerate()
-# - Prints each key/value in formatted order
-# → Example: 1. sorted → [2.3, 3.1, 4.5]
-
-# - Ask user how many numbers to input
-# - Take float inputs in a loop
-# - Validate numeric input
-# - Avoid using built-ins: sorted(), sum(), min(), max()
-
-# Input: 3 values → 4.5, 2.3, 3.1
-# Output:
-# 1. sorted → [2.3, 3.1, 4.5]
-# 2. sum → 9.9
-# 3. average → 3.3
-# 4. min → 2.3
-# 5. max → 4.5
-
 def analyze_numbers(numbers):
     sum_num = 0
     sorted_list = numbers[:]
