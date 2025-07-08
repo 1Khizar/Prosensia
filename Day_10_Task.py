@@ -33,7 +33,11 @@ class InventoryManager:
         self.products = {}
         
     def add_product(self, name, price, quantity, expiry_days = None):
-        self.products[name] = {'price' : price, "quantity" : quantity }
+        if expiry_days is not None :
+            product = PerishableProduct(name, price, quantity, expiry_days)
+            self.products[name] = {'price' : price, "quantity" : quantity , 'expiry_days' : expiry_days, 'discounted_value' : product.total_value() }
+        else:
+            self.products[name] = {'price' : price, "quantity" : quantity }
            
     def list_inventory(self):
         if not self.products:
@@ -57,7 +61,7 @@ class InventoryManager:
     def export_report(self, filename="inventory_report.txt"):
         with open(filename, "w") as f:
             [f.write(f"{name}: {info}\n") for name, info in self.products.items()]
-        print(f"📄 Report exported to {filename}")
+        print(f"Report exported to {filename}")
     
 def main():
     manager = InventoryManager()
@@ -81,12 +85,7 @@ def main():
             if expiry == 'yes':
                 expiry_days = int(input("Enter the expiry days : "))
                 product = PerishableProduct(name, price, quantity, expiry_days)
-                manager.products[name] = {
-                    'price' : price,
-                    'quantity' : quantity,
-                    'expiry_days' : expiry_days,
-                    'discounted_value' : product.total_value()
-                }
+                manager.add_product(name, price, quantity, expiry_days)
             else:
                 manager.add_product(name, price, quantity)
 
@@ -109,5 +108,4 @@ def main():
         
         else:
             print(f'Invalid choice. Try again.')
-
 main()
