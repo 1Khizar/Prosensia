@@ -1,0 +1,4 @@
+Exchange Rate Report (Base: USD)
+PKR :  284.68
+EUR :  0.857
+GBP :  0.744
