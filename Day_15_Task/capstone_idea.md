@@ -1,7 +1,7 @@
 # Capstone Project Plan
 
 ## 🧠 Project Title:
-**Budget Buddy: A Personal Finance Tracker**
+**Smart Expense Tracker: A Personal Finance Tracker**
 
 ---
 
