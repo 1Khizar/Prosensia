@@ -1,7 +1,7 @@
 # Capstone Project Plan
 
 ## 🧠 Project Title:
-**Budget Buddy: A Personal Finance Tracker**
+**Smart Expense Tracker: A Personal Finance Tracker**
 
 ---
 
@@ -21,7 +21,7 @@ To help users manage their income, track daily expenses, and visualize their spe
 
 ## 🛠️ Tools/Libraries:
 - Python
-- Tkinter or PyQt (for GUI) OR Flask (for web version)
+- Flask (for web version)
 - SQLite (for data storage)
 - Pandas (for data handling)
 - Matplotlib or Plotly (for visualization)
