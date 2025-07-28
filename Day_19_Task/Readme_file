@@ -1,0 +1,13 @@
+https://1khizar-prosensia-day-19-taskapp-pcxkis.streamlit.app/
+# Simple BMI Calculator
+
+A Streamlit app to calculate Body Mass Index (BMI) based on user weight and height.
+
+## How to use
+
+- Enter your weight (kg) and height (cm) in the sidebar  
+- View your BMI and category on the main page
+
+## Live Demo
+
+https://1khizar-prosensia-day-19-taskapp-pcxkis.streamlit.app/
