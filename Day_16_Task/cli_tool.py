@@ -23,7 +23,7 @@ def get_category(extension):
 def organize(path):
     """🧹 Organize files in the given folder by extension."""
     if not os.path.exists(path):
-        click.echo(Fore.RED + "❌ The given path does not exist.")
+        click.echo(Fore.RED + " The given path does not exist.")
         return
 
     click.echo(Fore.CYAN + f"📁 Organizing files in: {path}")
