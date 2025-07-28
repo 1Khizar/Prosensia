@@ -1,0 +1,3 @@
+ERROR:root:You tried to divide by zero!
+ERROR:root:You tried to divide by zero!
+ERROR:root:You tried to divide by zero!
