@@ -29,7 +29,7 @@ def get_weather(city):
 
 def save_to_file(data, filename="Day_21_Task/weather_data.txt"):
     with open(filename, "w") as file:
-        file.write(f"str(data)\n")
+        file.write(str(data))
     print(f"💾 Weather data saved to {filename}")
 
 # 🔘 Simple CLI Menu

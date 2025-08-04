@@ -1,1 +1,1 @@
-str(data)
+{'coord': {'lon': 72.9341, 'lat': 34}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 28.92, 'feels_like': 32.55, 'temp_min': 28.92, 'temp_max': 28.92, 'pressure': 999, 'humidity': 70, 'sea_level': 999, 'grnd_level': 927}, 'visibility': 10000, 'wind': {'speed': 1.61, 'deg': 108, 'gust': 1.46}, 'clouds': {'all': 51}, 'dt': 1753975571, 'sys': {'country': 'PK', 'sunrise': 1753921126, 'sunset': 1753971023}, 'timezone': 18000, 'id': 1177107, 'name': 'Haripur', 'cod': 200}
